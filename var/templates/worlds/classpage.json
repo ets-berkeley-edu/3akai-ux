@@ -1,0 +1,7 @@
+{
+    "id": "classpage",
+    "title" : "CLASSPAGE",
+    "titlePlural": "CLASSPAGES",
+    "menuLabel" : "CREATE_A_CLASSPAGE",
+    "order": 5
+}

@@ -1,0 +1,31 @@
+If data for a field is missing, will the JSON skip the field entirely, 
+or render it with an empty value?
+
+ROT13 email addrs
+
+Note coordinate on schedule: 
+    "coords" : "37.86992,-122.25341",
+    We can correlate these to walktime XML file
+
+Date formatting on Lecture Info - is there a 
+standard way this will be arriving?   
+
+Do we need both enrolled_cur and enrolled_max 
+or should it be sufficent to have just one of them?
+
+We need a way (in the json) to determine whether they've OK'd 
+live email links in the directory (??)
+
+Note on section/course times: A class meeting schedule can be somewhat irregular, such as:
+    T 9:30-11A, W 9:30-11A
+In this case, it's twice a week at the same time in which case it could be rendered in a simplified way:
+    TW 9:30-11A
+However, meeting times could also be highly irregular, such as:
+    M 9-10 A, W 3-4 P, F 2-3 P
+In this case, we can't simplify it by concatenating the weekdays, so we'll need to render a comma-separated string as above. 
+Design decision needed: We could choose to never simplify, and always render out the comma-separated string. Need
+to see the data source - maybe this will come to us pre-optimized.
+
+Main "schedule" section needs to change as well. Probably too simple as-is.
+
+Is ROT13 sufficient, or do we want to go MD5 or SHA or some more advanced encryption?
