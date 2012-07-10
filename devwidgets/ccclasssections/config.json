@@ -1,0 +1,19 @@
+{
+    "id":                 "ccclasssections",
+    "name":               "Course Sections",
+    "description":        "Display set of sections for a given course offering.",
+    "type":               "contrib",
+    "enabled":            true,
+    "hasSettings":        false,
+    "url":                "/devwidgets/ccclasssections/ccclasssections.html",
+    "img":                "/devwidgets/ccclasssections/images/ccclasssections.png",
+    "i18n": {
+        "default": {
+            "bundle":        "/devwidgets/ccclasssections/bundles/default.properties",
+            "name":           "Class Sections",
+            "description":    "Display set of sections for a given course offering."
+        }
+    },
+    "personalportal":     false,
+    "sakaidocs":          true,
+}

@@ -1,0 +1,85 @@
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="/devwidgets/ccclassinfo/css/ccclassinfo.css" />
+
+
+<!-- CALCENTRAL CLASS PAGE WIDGETS ALL HAVE SAME PARENT CONTAINER -->
+
+<div class="s3d-widget-container" id="classpages_instructorinfo" style="display:none;"><!--
+    <div class="s3d-contentpage-title">
+        Instructor{if numinstrs > 1}s{/if}
+    </div>
+    {if instructors}
+    {for instructor in instructors}
+
+    <div class="classpages_instructorinfo_body classpages_widget_body">
+        {if instructor.id}<a href="/~${instructor.id}">{/if}
+            <img src="{if instructor.img}${instructor.img}{else}/dev/images/default_User_icon_100x100.png{/if}"
+
+            alt="Intructor photo for ${instructor.name}" class="classpages_instructor_pic">
+        {if instructor.id}</a>{/if}
+
+        <table class="classpages_instr_table">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>
+                        <strong>
+                            <div class="classpages_instr_name">
+                                {if instructor.id}<a href="/~${instructor.id}">{/if}
+                                {if instructor.name}${instructor.name}{else}Instructor name not available{/if}
+                                {if instructor.id}</a>{/if}
+
+                                {if instructor.email}
+                                    <a class="rotmail" data-rotmail="${instructor.email}" href="#">
+                                        <img src="/dev/images/message_icon_default.png" alt="email icon" class="classpages_message_icon">
+                                    </a>
+                                {/if}
+                            </div>
+
+                            {if instructor.title}
+                            <div class="classpages_instr_title">
+                                <em>${instructor.title}</em>
+                            </div>
+                            {/if}
+                        </strong>
+                    </th>
+                </tr>
+            </thead>
+            <tbody class="ccclassinstructors-infotable">
+
+                {if instructor.url}
+                    <tr>
+                        <td class="classpages_table_label">Website:</td>
+                        <td><a href="${instructor.url}">${instructor.url}</a></td>
+                    </tr>
+                {/if}
+
+                {if instructor.phone}
+                    <tr>
+                        <td class="classpages_table_label">Phone number:</td>
+                        <td>${instructor.phone}</td>
+                    </tr>
+                {/if}
+
+                {if instructor.office}
+                    <tr>
+                        <td class="classpages_table_label">Office:</td>
+                        <td><a href="http://example.berkeley.edu">${instructor.office}</a></td>
+                    </tr>
+                {/if}
+
+            </tbody>
+        </table>
+    </div>
+
+    {/for}
+    {else}
+        <div class="classpages_instructorinfo_body classpages_widget_body">
+            <p><em>Not available</em></p>
+        </div>
+    {/if}
+--></div>
+
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript" src="/devwidgets/ccclassinstructors/javascript/ccclassinstructors.js"></script>

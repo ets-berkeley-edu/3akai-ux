@@ -1,0 +1,19 @@
+{
+  "description" : "Show set of instructors for a given course offering.",
+  "enabled" : true,
+  "hasSettings" : false,
+  "i18n" : {
+    "default" : {
+      "bundle" : "/devwidgets/ccclassinstructors/bundles/default.properties",
+      "description" : "Show set of instructors for a given course offering.",
+      "name" : "Class Instructors"
+    }
+  },
+  "id" : "ccclassinstructors",
+  "img" : "/devwidgets/ccclassinstructors/images/ccclassinstructors.png",
+  "name" : "Course Instructors",
+  "personalportal" : false,
+  "sakaidocs" : true,
+  "type" : "contrib",
+  "url" : "/devwidgets/ccclassinstructors/ccclassinstructors.html"
+}
