@@ -1,7 +1,7 @@
 {
     "id":                 "cccalendarfeed",
     "type":               "contrib",
-    "description":        "Calendar Feed",
+    "description":        "Calendar Feed - BETA",
     "enabled":            true,
     "hasSettings":        true,
     "url":                "/devwidgets/cccalendarfeed/cccalendarfeed.html",
