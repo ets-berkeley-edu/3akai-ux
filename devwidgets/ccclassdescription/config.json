@@ -1,0 +1,19 @@
+{
+    "id":                 "ccclassdescription",
+    "name":               "Course Desc",
+    "description":        "Show text description for a course offering.",
+    "type":               "contrib",
+    "enabled":            true,
+    "hasSettings":        false,
+    "url":                "/devwidgets/ccclassdescription/ccclassdescription.html",
+    "img":                "/devwidgets/ccclassdescription/images/ccclassdescription.png",
+    "i18n": {
+        "default": {
+            "bundle":        "/devwidgets/ccclassdescription/bundles/default.properties",
+            "name":           "Course Desc",
+            "description":    "Show text description for a course offering."
+        }
+    },
+    "personalportal":     false,
+    "sakaidocs":          true
+}

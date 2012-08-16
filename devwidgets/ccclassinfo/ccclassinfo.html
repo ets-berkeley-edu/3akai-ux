@@ -1,0 +1,70 @@
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="/devwidgets/ccclassinfo/css/ccclassinfo.css" />
+
+<!-- CALCENTRAL CLASS PAGE WIDGETS ALL HAVE SAME PARENT CONTAINER -->
+
+<div class="s3d-widget-container equalcols" id="cc-classpage-ccclassinfo">
+
+    <div class="s3d-contentpage-title">
+        Course Info
+    </div>
+
+    <div class="classpages_widget_body" id="cc-classpage-courseinfo-body" style="display:none;"><!--
+    {if info}
+       <table>
+        <tbody>
+            <tr>
+                <td class="classpages_table_label">Format:</td>
+                <td>
+                    {if info.format}${info.format}{else}<em>Not available</em>{/if}
+                </td>
+            </tr>
+
+            <tr>
+                <td class="classpages_table_label">Units:</td>
+                <td>
+                    {if info.units}${info.units}{else}<em>Not available</em>{/if}
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="classpages_table_label">Semesters offered:</td>
+                <td>
+                    {if info.semesters_offered}${info.semesters_offered}{else}<em>Not available</em>{/if}
+                </td>
+            </tr>
+
+            <tr>
+                <td class="classpages_table_label">Requirements:</td>
+                <td>
+                    {if info.requirements}${info.requirements}{else}<em>Not available</em>{/if}
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="classpages_table_label">Grading:</td>
+                <td>
+                    {if info.grading}${info.grading}{else}<em>Not available</em>{/if}
+                </td>
+            </tr>
+
+            <tr>
+                <td class="classpages_table_label">Prerequisites:</td>
+                <td>
+                    {if info.prereqs}${info.prereqs}{else}<em>Not available</em>{/if}
+                </td>
+            </tr>
+
+        </tbody>
+       </table>
+    {else}
+        <em>Not available</em>
+    {/if}
+    --></div>
+
+</div>
+
+
+<script type="text/javascript" src="/devwidgets/ccclassinfo/javascript/ccclassinfo.js"></script>

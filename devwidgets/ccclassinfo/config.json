@@ -1,0 +1,19 @@
+{
+    "id":                 "ccclassinfo",
+    "name":               "Course Info",
+    "description":        "Show meta info for a class offering",
+    "type":               "contrib",
+    "enabled":            true,
+    "hasSettings":        false,
+    "url":                "/devwidgets/ccclassinfo/ccclassinfo.html",
+    "img":                "/devwidgets/ccclassinfo/images/ccclassinfo.png",
+    "i18n": {
+        "default": {
+            "bundle":        "/devwidgets/ccclassinfo/bundles/default.properties",
+            "name":           "Class Info",
+            "description":    "Show meta info for a class offering."
+        }
+    },
+    "personalportal":     false,
+    "sakaidocs":          true
+}
